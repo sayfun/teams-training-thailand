@@ -8,6 +8,8 @@ import Contact from './pages/Contact'
 import Corporate from './pages/programs/Corporate'
 import Educators from './pages/programs/Educators'
 import Youth from './pages/programs/Youth'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 
 export default function App() {
   return (
@@ -21,6 +23,8 @@ export default function App() {
         <Route path="/programs/corporate" element={<Corporate />} />
         <Route path="/programs/educators" element={<Educators />} />
         <Route path="/programs/youth" element={<Youth />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
       <Footer />
     </>

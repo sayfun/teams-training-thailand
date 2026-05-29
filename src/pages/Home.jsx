@@ -37,11 +37,11 @@ export default function Home() {
         </div>
         <div className="hero-right">
           <div className="hero-img-wrap">
-            <img src="https://teamstrainingthailand.com/wp-content/uploads/2025/08/IMG_5193-1024x768.jpg" alt="TEAMS session in Bangkok" />
+            <img src="https://teamstrainingthailand.com/wp-content/uploads/2026/01/WhatsApp-Image-2569-01-11-at-16.19.41-1024x768.jpeg" alt="TEAMS cross-cultural team building in Ayutthaya" />
           </div>
           <div className="hero-badge">
-            <div className="badge-num">10+</div>
-            <div className="badge-txt"><strong>Years of experience</strong>in Bangkok and across Thailand</div>
+            <div className="badge-num">3</div>
+            <div className="badge-txt"><strong>Program tracks</strong>Youth · Educators · Corporate</div>
           </div>
         </div>
       </section>

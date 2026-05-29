@@ -43,6 +43,7 @@ export default function Nav() {
           </div>
         </div>
         <Link to="/about" className="nav-link">About</Link>
+        <Link to="/blog" className="nav-link">Blog</Link>
         <Link to="/updates" className="nav-link">Updates</Link>
         <Link to="/contact" className="nav-cta">Book a session</Link>
       </div>
