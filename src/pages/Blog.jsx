@@ -27,7 +27,7 @@ export default function Blog() {
           <p className="section-sub">Program updates, upcoming events, and articles on experiential learning, team building, and leadership development in Thailand.</p>
         </div>
 
-        <div className="blog-filters fu" ref={r} style={{ transitionDelay: '0.1s' }}>
+        <div className="blog-filters">
           {CATEGORIES.map(cat => (
             <button
               key={cat}
