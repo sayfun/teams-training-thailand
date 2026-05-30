@@ -9,9 +9,8 @@
   --off:     #F8F9FC;
   --grey:    #6B7280;
   --border:  rgba(13,27,75,0.09);
-  /* System font = San Francisco on Mac/iOS, Segoe UI on Windows, Roboto on Android */
-  --font-d:  -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
-  --font-b:  -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+  --font-d:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-b:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
