@@ -11,7 +11,7 @@ export default function Youth() {
       <section className="section prog-hero">
         <div className="fu" ref={r}>
           <div className="section-label">Programs · Youth</div>
-          <h1 className="section-title" style={{maxWidth:'640px'}}>Give kids the skills life doesn't always teach directly.</h1>
+          <h1 className="section-title" style={{maxWidth:'640px'}}>Give kids the skills life <em>doesn't always teach directly.</em></h1>
           <p className="section-sub" style={{marginBottom:'2rem'}}>Children and teenagers are constantly navigating teams — classrooms, sports, friendships, family. TEAMS youth programs help them do it better: understanding themselves, communicating clearly, supporting others, and developing the resilience to keep going when things get hard.</p>
           <Link to="/contact" className="btn-primary">Book a session</Link>
         </div>
@@ -23,7 +23,7 @@ export default function Youth() {
       <section className="section" style={{background:'var(--off)'}}>
         <div className="fu" ref={r}>
           <div className="section-label">What we develop</div>
-          <h2 className="section-title">What participants gain.</h2>
+          <h2 className="section-title">What participants <em>gain.</em></h2>
         </div>
         <div className="items-grid fu" ref={r} style={{transitionDelay:'0.1s'}}>
           {ITEMS.map((item, i) => (
@@ -38,7 +38,7 @@ export default function Youth() {
       <section className="section" style={{background:'var(--white)'}}>
         <div className="fu" ref={r}>
           <div className="section-label">Format</div>
-          <h2 className="section-title">How it works.</h2>
+          <h2 className="section-title">How it <em>works.</em></h2>
           <p className="section-sub" style={{marginBottom:'2.5rem'}}>Half-day workshops, multi-day camps, school programs, and after-school sessions. Ages 8–18. All programs bilingual in Thai and English. Upcoming sessions posted in Updates.</p>
           <Link to="/contact" className="btn-primary">Get in touch</Link>
         </div>

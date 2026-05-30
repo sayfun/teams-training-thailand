@@ -11,7 +11,7 @@ export default function Corporate() {
       <section className="section prog-hero">
         <div className="fu" ref={r}>
           <div className="section-label">Programs · Corporate</div>
-          <h1 className="section-title" style={{maxWidth:'640px'}}>Turning coworkers into a team that actually works together.</h1>
+          <h1 className="section-title" style={{maxWidth:'640px'}}>Turning coworkers into a team that <em>actually works together.</em></h1>
           <p className="section-sub" style={{marginBottom:'2rem'}}>Most corporate teams share a calendar. Fewer share a genuine sense of trust, communication, and purpose. TEAMS corporate programs close that gap — not through lectures or slide decks, but through purposeful activities that surface how your team actually operates, and create the conditions for something better.</p>
           <Link to="/contact" className="btn-primary">Book a session</Link>
         </div>
@@ -23,7 +23,7 @@ export default function Corporate() {
       <section className="section" style={{background:'var(--off)'}}>
         <div className="fu" ref={r}>
           <div className="section-label">What we develop</div>
-          <h2 className="section-title">What participants gain.</h2>
+          <h2 className="section-title">What participants <em>gain.</em></h2>
         </div>
         <div className="items-grid fu" ref={r} style={{transitionDelay:'0.1s'}}>
           {ITEMS.map((item, i) => (
@@ -38,7 +38,7 @@ export default function Corporate() {
       <section className="section" style={{background:'var(--white)'}}>
         <div className="fu" ref={r}>
           <div className="section-label">Format</div>
-          <h2 className="section-title">How it works.</h2>
+          <h2 className="section-title">How it <em>works.</em></h2>
           <p className="section-sub" style={{marginBottom:'2.5rem'}}>Half-day or full-day sessions, offsite or in-house. All programs are bilingual (Thai and English) and designed after a consultation with your HR or leadership team.</p>
           <Link to="/contact" className="btn-primary">Get in touch</Link>
         </div>

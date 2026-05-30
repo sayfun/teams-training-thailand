@@ -8,7 +8,7 @@ export default function About() {
       <section className="section about-hero">
         <div className="fu" ref={r}>
           <div className="section-label">About TEAMS</div>
-          <h1 className="section-title" style={{maxWidth:'640px'}}>We don't run activities.<br />We change how people work together.</h1>
+          <h1 className="section-title" style={{maxWidth:'640px'}}>We don't run activities.<br />We change how people <em>work together.</em></h1>
           <p className="section-sub">TEAMS Training Thailand is a Bangkok-based experiential learning practice. We design and facilitate purposeful programs that develop the human skills no classroom teaches directly — empathy, trust, leadership, and self-awareness.</p>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function About() {
       <section className="section about-values">
         <div className="fu" ref={r}>
           <div className="section-label">What we believe</div>
-          <h2 className="section-title">Our principles.</h2>
+          <h2 className="section-title">Our <em>principles.</em></h2>
         </div>
         <div className="values-grid">
           {[

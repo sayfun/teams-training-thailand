@@ -50,7 +50,7 @@ export default function Home() {
       <section className="section programs-section">
         <div className="section-head fu" ref={r}>
           <div className="section-label">Who we work with</div>
-          <h2 className="section-title">Built for the people<br />you're developing.</h2>
+          <h2 className="section-title">Built for the people<br />you're <em>developing.</em></h2>
           <p className="section-sub">Every program is tailored to its audience — always grounded in the same human-first methodology.</p>
         </div>
         <div className="programs-grid fu" ref={r} style={{transitionDelay:'0.1s'}}>
@@ -74,7 +74,7 @@ export default function Home() {
         <div className="framework-inner">
           <div className="fu" ref={r}>
             <div className="section-label">Our methodology</div>
-            <h2 className="section-title">The TEAMS<br />framework.</h2>
+            <h2 className="section-title">The <em>TEAMS</em><br />framework.</h2>
             <p className="section-sub" style={{marginBottom:'2rem'}}>Five qualities we cultivate in every participant — whether they're eight or forty-eight.</p>
             <div className="fw-list">
               {FRAMEWORK.map((f,i) => (
@@ -103,7 +103,7 @@ export default function Home() {
         <div className="events-header fu" ref={r}>
           <div>
             <div className="section-label">What's on</div>
-            <h2 className="section-title">Recent &amp; upcoming.</h2>
+            <h2 className="section-title">Recent &amp; <em>upcoming.</em></h2>
           </div>
           <Link to="/updates" className="link-pill">View all →</Link>
         </div>
