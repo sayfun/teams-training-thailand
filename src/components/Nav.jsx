@@ -6,6 +6,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [programsOpen, setProgramsOpen] = useState(false)
+  const [updatesOpen, setUpdatesOpen] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function Nav() {
   useEffect(() => {
     setMenuOpen(false)
     setProgramsOpen(false)
+    setUpdatesOpen(false)
   }, [location])
 
   return (
@@ -43,8 +45,19 @@ export default function Nav() {
           </div>
         </div>
         <Link to="/about" className="nav-link">About</Link>
-        <Link to="/blog" className="nav-link">Blog</Link>
-        <Link to="/updates" className="nav-link">Updates</Link>
+        <div
+          className={`nav-dropdown${updatesOpen ? ' open' : ''}`}
+          onMouseEnter={() => setUpdatesOpen(true)}
+          onMouseLeave={() => setUpdatesOpen(false)}
+        >
+          <button className="nav-link nav-link-btn" onClick={() => setUpdatesOpen(v => !v)}>
+            Updates <span className="chevron">▾</span>
+          </button>
+          <div className="dropdown-menu">
+            <Link to="/updates" className="dropdown-item">Events &amp; News</Link>
+            <Link to="/blog" className="dropdown-item">Blog &amp; Articles</Link>
+          </div>
+        </div>
         <Link to="/contact" className="nav-cta">Book a session</Link>
       </div>
 

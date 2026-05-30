@@ -25,6 +25,7 @@ export default function Footer() {
             <div className="footer-col-title">Company</div>
             <Link to="/about">About</Link>
             <Link to="/updates">Updates</Link>
+            <Link to="/blog">Blog</Link>
             <Link to="/contact">Contact</Link>
           </div>
           <div>
