@@ -27,7 +27,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <div className="hero-eyebrow">Bangkok · Experiential Learning</div>
-          <h1 className="hero-title">Great leaders start as great <em>teammates.</em></h1>
+          <h1 className="hero-title">Great leaders<br />start as great <em>teammates.</em></h1>
           <p className="hero-tagline">Where teams learn to be human.</p>
           <p className="hero-body">TEAMS Training Thailand develops the skills that matter beyond any job description — empathy, leadership, communication, trust — through purposeful activities for kids, educators, and professionals.</p>
           <div className="hero-actions">
