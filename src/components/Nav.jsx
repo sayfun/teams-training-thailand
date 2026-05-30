@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Nav.css'
 
@@ -7,6 +7,8 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [programsOpen, setProgramsOpen] = useState(false)
   const [updatesOpen, setUpdatesOpen] = useState(false)
+  const programsTimer = useRef(null)
+  const updatesTimer = useRef(null)
   const location = useLocation()
 
   useEffect(() => {
@@ -21,6 +23,11 @@ export default function Nav() {
     setUpdatesOpen(false)
   }, [location])
 
+  const openPrograms  = () => { clearTimeout(programsTimer.current); setProgramsOpen(true) }
+  const closePrograms = () => { programsTimer.current = setTimeout(() => setProgramsOpen(false), 200) }
+  const openUpdates   = () => { clearTimeout(updatesTimer.current); setUpdatesOpen(true) }
+  const closeUpdates  = () => { updatesTimer.current = setTimeout(() => setUpdatesOpen(false), 200) }
+
   return (
     <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
       <Link to="/" className="nav-logo">
@@ -30,10 +37,12 @@ export default function Nav() {
       </Link>
 
       <div className={`nav-links${menuOpen ? ' open' : ''}`}>
+
+        {/* Programs dropdown */}
         <div
           className={`nav-dropdown${programsOpen ? ' open' : ''}`}
-          onMouseEnter={() => setProgramsOpen(true)}
-          onMouseLeave={() => setProgramsOpen(false)}
+          onMouseEnter={openPrograms}
+          onMouseLeave={closePrograms}
         >
           <button className="nav-link nav-link-btn" onClick={() => setProgramsOpen(v => !v)}>
             Programs <span className="chevron">▾</span>
@@ -44,11 +53,14 @@ export default function Nav() {
             <Link to="/programs/youth" className="dropdown-item">Youth</Link>
           </div>
         </div>
+
         <Link to="/about" className="nav-link">About</Link>
+
+        {/* Updates dropdown */}
         <div
           className={`nav-dropdown${updatesOpen ? ' open' : ''}`}
-          onMouseEnter={() => setUpdatesOpen(true)}
-          onMouseLeave={() => setUpdatesOpen(false)}
+          onMouseEnter={openUpdates}
+          onMouseLeave={closeUpdates}
         >
           <button className="nav-link nav-link-btn" onClick={() => setUpdatesOpen(v => !v)}>
             Updates <span className="chevron">▾</span>
@@ -58,6 +70,7 @@ export default function Nav() {
             <Link to="/blog" className="dropdown-item">Blog &amp; Articles</Link>
           </div>
         </div>
+
         <Link to="/contact" className="nav-cta">Book a session</Link>
       </div>
 
