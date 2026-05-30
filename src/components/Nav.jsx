@@ -32,8 +32,8 @@ export default function Nav() {
     <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
       <Link to="/" className="nav-logo">
         <span className="logo-teams">TEAMS</span>
-        <span className="logo-dot">.</span>
         <span className="logo-rest"> Training Thailand</span>
+        <span className="logo-dot">.</span>
       </Link>
 
       <div className={`nav-links${menuOpen ? ' open' : ''}`}>

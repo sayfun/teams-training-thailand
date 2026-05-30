@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <div className="footer-logo"><span className="fl-teams">TEAMS</span><span className="fl-dot">.</span><span className="fl-rest"> Training Thailand</span></div>
+          <div className="footer-logo"><span className="fl-teams">TEAMS</span><span className="fl-rest"> Training Thailand</span><span className="fl-dot">.</span></div>
           <p className="footer-tagline">Great leaders start as great teammates.</p>
           <p className="footer-desc">Bangkok-based experiential learning. We develop empathy, leadership, communication and teamwork — for kids, educators, and professionals.</p>
           <div className="footer-social">
