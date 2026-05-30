@@ -1,4 +1,5 @@
 .prog-hero { background: var(--white); display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.prog-hero .section-title { font-size: clamp(1.9rem, 3.2vw, 2.9rem); }
 .prog-hero-img { border-radius: 18px; overflow: hidden; height: 480px; }
 .prog-hero-img img { width: 100%; height: 100%; object-fit: cover; }
 .items-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 2.5rem; }

@@ -11,7 +11,7 @@ export default function Youth() {
       <section className="section prog-hero">
         <div className="fu" ref={r}>
           <div className="section-label">Programs · Youth</div>
-          <h1 className="section-title" style={{maxWidth:'640px'}}>Give kids the skills life <em>doesn't always teach directly.</em></h1>
+          <h1 className="section-title" style={{maxWidth:'640px'}}>Give kids the skills<br />life doesn't always <em>teach directly.</em></h1>
           <p className="section-sub" style={{marginBottom:'2rem'}}>Children and teenagers are constantly navigating teams — classrooms, sports, friendships, family. TEAMS youth programs help them do it better: understanding themselves, communicating clearly, supporting others, and developing the resilience to keep going when things get hard.</p>
           <Link to="/contact" className="btn-primary">Book a session</Link>
         </div>

@@ -11,7 +11,7 @@ export default function Educators() {
       <section className="section prog-hero">
         <div className="fu" ref={r}>
           <div className="section-label">Programs · Educators</div>
-          <h1 className="section-title" style={{maxWidth:'640px'}}>Develop yourself so you can <em>develop others.</em></h1>
+          <h1 className="section-title" style={{maxWidth:'640px'}}>Develop yourself<br />so you can develop <em>others.</em></h1>
           <p className="section-sub" style={{marginBottom:'2rem'}}>Educators are asked to build emotional intelligence, leadership, and collaboration in their students — often without having had the space to develop these skills themselves. TEAMS educator programs are for teachers, school staff, and facilitators who want to grow alongside their students.</p>
           <Link to="/contact" className="btn-primary">Book a session</Link>
         </div>

@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="contact-inner">
           <div className="fu" ref={r}>
             <div className="section-label">Get in touch</div>
-            <h1 className="section-title">Let's build<br /><em>something together.</em></h1>
+            <h1 className="section-title">Let's build<br />something <em>together.</em></h1>
             <p className="section-sub" style={{marginBottom:'2.5rem'}}>Tell us who you're developing — your team, your students, your kids. We'll design something around them.</p>
             <div className="contact-methods">
               <a href="mailto:info@teamstrainingthailand.com" className="cm-row">

@@ -11,7 +11,7 @@ export default function Corporate() {
       <section className="section prog-hero">
         <div className="fu" ref={r}>
           <div className="section-label">Programs · Corporate</div>
-          <h1 className="section-title" style={{maxWidth:'640px'}}>Turning coworkers into a team that <em>actually works together.</em></h1>
+          <h1 className="section-title" style={{maxWidth:'640px'}}>Turning coworkers into<br />a team that actually <em>works together.</em></h1>
           <p className="section-sub" style={{marginBottom:'2rem'}}>Most corporate teams share a calendar. Fewer share a genuine sense of trust, communication, and purpose. TEAMS corporate programs close that gap — not through lectures or slide decks, but through purposeful activities that surface how your team actually operates, and create the conditions for something better.</p>
           <Link to="/contact" className="btn-primary">Book a session</Link>
         </div>
