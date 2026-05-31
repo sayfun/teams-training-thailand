@@ -142,6 +142,10 @@ export default function Home() {
             <div className="contact-ic">📸</div>
             <div><div className="contact-lbl">Instagram</div><div className="contact-val">@teamstrainingthailand</div></div>
           </a>
+          <a href="https://www.facebook.com/teamstrainingthailand" target="_blank" rel="noreferrer" className="contact-row">
+            <div className="contact-ic">👥</div>
+            <div><div className="contact-lbl">Facebook</div><div className="contact-val">TEAMS Training Thailand</div></div>
+          </a>
           <div className="contact-row">
             <div className="contact-ic">💬</div>
             <div><div className="contact-lbl">LINE OA</div><div className="contact-val">Scan QR on contact page</div></div>

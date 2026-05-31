@@ -20,7 +20,7 @@ export default function Contact() {
                 <div className="cm-icon">📸</div>
                 <div><div className="cm-label">Instagram</div><div className="cm-val">@teamstrainingthailand</div></div>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61579948450407" target="_blank" rel="noreferrer" className="cm-row">
+              <a href="https://www.facebook.com/teamstrainingthailand" target="_blank" rel="noreferrer" className="cm-row">
                 <div className="cm-icon">👥</div>
                 <div><div className="cm-label">Facebook</div><div className="cm-val">TEAMS Training Thailand</div></div>
               </a>
