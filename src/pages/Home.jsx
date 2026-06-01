@@ -7,7 +7,7 @@ const FRAMEWORK = [
   { l:'E', w:'Empathy',      d:'Understanding others before demanding to be understood.' },
   { l:'A', w:'Adaptability', d:'Thriving when the plan changes — because it always does.' },
   { l:'M', w:'Mindset',      d:'Growth-oriented, curious, and resilient under pressure.' },
-  { l:'S', w:'Synergy',      d:'The group becoming more than the sum of its parts.' },
+  { l:'S', w:'Sportsmanship', d:'Competing and collaborating with integrity, grace, and respect.' },
 ]
 
 const SKILLS = ['Empathy','Communication','Emotional intelligence','Collaboration','Creative thinking','Leadership','Resilience','Self-awareness']
