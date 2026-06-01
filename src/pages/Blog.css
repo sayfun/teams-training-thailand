@@ -2,6 +2,9 @@
 .blog-hero {
   padding-bottom: 2rem;
 }
+.blog-card-img-placeholder {
+  width: 100%; height: 196px; background: var(--off);
+}
 
 /* ── Filter chips ── */
 .blog-filters {
