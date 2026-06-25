@@ -16,7 +16,7 @@ export default function Youth() {
           <Link to="/contact" className="btn-primary">Book a session</Link>
         </div>
         <div className="prog-hero-img fu" ref={r} style={{transitionDelay:'0.15s'}}>
-          <img src="https://teamstrainingthailand.com/wp-content/uploads/2026/02/WhatsApp-Image-2569-02-16-at-17.06.08-1-e1771246947605-1024x607.jpeg" alt="Youth program — TEAMS Training Thailand" />
+          <img src="https://wp.teamstrainingthailand.com/wp-content/uploads/2026/02/WhatsApp-Image-2569-02-16-at-17.06.08-1-e1771246947605-1024x607.jpeg" alt="Youth program — TEAMS Training Thailand" />
         </div>
       </section>
 

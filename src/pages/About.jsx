@@ -16,7 +16,7 @@ export default function About() {
       <section className="section about-founder" style={{background:'var(--off)'}}>
         <div className="founder-inner fu" ref={r}>
           <div className="founder-img-wrap">
-            <img src="https://teamstrainingthailand.com/wp-content/uploads/2024/10/WhatsApp-Image-2024-09-26-at-14.07.05.jpeg" alt="Kanny — Founder of TEAMS Training Thailand" />
+            <img src="/kanny.png" alt="Kanny — Founder of TEAMS Training Thailand" />
           </div>
           <div className="founder-content">
             <div className="section-label">The founder</div>

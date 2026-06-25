@@ -16,6 +16,12 @@
 .form-field label { font-size: 0.78rem; font-weight: 600; color: var(--navy); letter-spacing: 0.02em; }
 .form-field input, .form-field select, .form-field textarea { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 0.75rem 1rem; font-family: var(--font-b); font-size: 0.9rem; color: var(--navy); outline: none; transition: border-color 0.2s; resize: vertical; }
 .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: var(--navy); }
+.form-error { font-size: 0.85rem; color: #c0392b; background: #fdf0ef; border: 1px solid #f5c6c2; border-radius: 8px; padding: 0.7rem 1rem; }
+.form-success { text-align: center; padding: 3rem 1rem; }
+.form-success-icon { width: 56px; height: 56px; border-radius: 50%; background: var(--gold-lt); color: var(--gold); font-size: 1.6rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; }
+.form-success h3 { font-family: var(--font-d); font-size: 1.3rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+.form-success p { font-size: 0.9rem; color: var(--grey); }
+
 @media (max-width: 860px) {
   .contact-inner { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }

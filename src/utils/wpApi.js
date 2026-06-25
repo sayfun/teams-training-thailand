@@ -1,4 +1,4 @@
-const WP_API = 'https://teamstrainingthailand.com/wp-json/wp/v2'
+const WP_API = 'https://wp.teamstrainingthailand.com/wp-json/wp/v2'
 
 function decodeHtml(str) {
   return str
@@ -28,17 +28,25 @@ const CAT_COLORS = {
   'Team Building':   'navy',
 }
 
+function fixImgUrl(url) {
+  if (!url) return null
+  return url.replace('https://teamstrainingthailand.com/wp-content', 'https://wp.teamstrainingthailand.com/wp-content')
+            .replace('http://teamstrainingthailand.com/wp-content',  'https://wp.teamstrainingthailand.com/wp-content')
+}
+
 function normalizePost(p) {
   const cats      = p._embedded?.['wp:term']?.[0] || []
   const primaryCat = cats[0]?.name || 'Article'
-  const img       = p._embedded?.['wp:featuredmedia']?.[0]?.source_url || null
+  const img       = fixImgUrl(p._embedded?.['wp:featuredmedia']?.[0]?.source_url || null)
   const excerpt   = stripTags(p.excerpt.rendered).slice(0, 160)
 
   return {
     slug:          p.slug,
     title:         decodeHtml(p.title.rendered),
     excerpt,
-    content:       p.content.rendered,
+    content:       p.content.rendered
+                    .replace(/https:\/\/teamstrainingthailand\.com\/wp-content/g, 'https://wp.teamstrainingthailand.com/wp-content')
+                    .replace(/http:\/\/teamstrainingthailand\.com\/wp-content/g,  'https://wp.teamstrainingthailand.com/wp-content'),
     dateLabel:     formatDate(p.date),
     img,
     category:      primaryCat,

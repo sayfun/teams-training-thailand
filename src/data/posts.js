@@ -9,7 +9,7 @@ export const POSTS = [
     location: 'Sanctuary Studio, Sukhumvit 103',
     readTime: '2 min',
     excerpt: 'A half-day workshop for students ages 8–16 to explore their personal strengths in a team setting. Structured activities, guided reflection, and real tools to carry forward.',
-    img: 'https://teamstrainingthailand.com/wp-content/uploads/2026/04/TEAMS-Posts-Square-6-1024x1024.png',
+    img: 'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/04/TEAMS-Posts-Square-6-1024x1024.png',
     seoTitle: 'Discover Strength & Build Confidence Workshop — TEAMS Training Thailand',
     seoDesc: 'Join our upcoming half-day strength-discovery workshop for students ages 8–16 in Bangkok. Learn how to identify and use your strengths in a team. Limited spots.',
     content: `
@@ -49,7 +49,7 @@ export const POSTS = [
     location: 'C2 Community, Phayathai, Bangkok',
     readTime: '3 min',
     excerpt: 'Two mornings of purposeful activities helping kids discover how they lead, communicate, and collaborate under gentle pressure. Real skills, real fun, real reflection.',
-    img: 'https://teamstrainingthailand.com/wp-content/uploads/2026/02/WhatsApp-Image-2569-02-16-at-17.06.08-1-e1771246947605-1024x607.jpeg',
+    img: 'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/02/WhatsApp-Image-2569-02-16-at-17.06.08-1-e1771246947605-1024x607.jpeg',
     seoTitle: 'TEAMS Discovery Camp for Kids Ages 8–12 — Bangkok March 2026',
     seoDesc: 'A two-morning experiential camp for children aged 8–12 in Bangkok. Activities built around leadership, communication, and collaboration. Bilingual Thai & English.',
     content: `
@@ -88,7 +88,7 @@ export const POSTS = [
     location: 'Ayutthaya, Thailand',
     readTime: '4 min',
     excerpt: 'How we designed a cross-cultural team building day that brought Thai and Korean students together — and what happened when different cultures had to solve the same problem.',
-    img: 'https://teamstrainingthailand.com/wp-content/uploads/2026/01/WhatsApp-Image-2569-01-11-at-16.19.41-1024x768.jpeg',
+    img: 'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/01/WhatsApp-Image-2569-01-11-at-16.19.41-1024x768.jpeg',
     seoTitle: 'Cross-Cultural Team Building: Thai & Korean Students in Ayutthaya — TEAMS',
     seoDesc: 'How TEAMS Training Thailand designed a cross-cultural experiential learning day for Thai and Korean students during a shared trip to Ayutthaya.',
     content: `
@@ -120,7 +120,7 @@ export const POSTS = [
     location: 'Bangkok',
     readTime: '3 min',
     excerpt: 'Kindness is not weakness — it\'s one of the most underrated leadership competencies. The Kind Leaders Project is a multi-session program that treats it as a core skill.',
-    img: 'https://teamstrainingthailand.com/wp-content/uploads/2025/10/Poster-2-724x1024.png',
+    img: 'https://wp.teamstrainingthailand.com/wp-content/uploads/2025/10/Poster-2-724x1024.png',
     seoTitle: 'The Kind Leaders Project — Youth Leadership Program Bangkok | TEAMS',
     seoDesc: 'A multi-session youth leadership program in Bangkok built around kindness as a core leadership skill. Developed by TEAMS Training Thailand.',
     content: `
@@ -156,7 +156,7 @@ export const POSTS = [
     location: null,
     readTime: '5 min',
     excerpt: 'The research behind why doing is more powerful than listening — and how we apply it in every TEAMS program for youth in Bangkok.',
-    img: 'https://teamstrainingthailand.com/wp-content/uploads/2025/08/IMG_5193-1024x768.jpg',
+    img: 'https://wp.teamstrainingthailand.com/wp-content/uploads/2025/08/IMG_5193-1024x768.jpg',
     seoTitle: 'Why Experiential Learning Works for Kids | TEAMS Training Thailand Bangkok',
     seoDesc: 'Explore the research behind experiential learning and why activities, reflection, and challenge are more effective than lectures for developing life skills in children and teens.',
     content: `
@@ -200,7 +200,7 @@ export const POSTS = [
     location: null,
     readTime: '6 min',
     excerpt: 'Not all team building is created equal. Here\'s how to tell the difference between activities that feel good in the moment and programs that create lasting change in your team.',
-    img: 'https://teamstrainingthailand.com/wp-content/uploads/2025/02/Copy-of-455192972_1257494402093634_2774834864595962944_n.jpg',
+    img: 'https://wp.teamstrainingthailand.com/wp-content/uploads/2025/02/Copy-of-455192972_1257494402093634_2774834864595962944_n.jpg',
     seoTitle: 'Corporate Team Building in Bangkok: What Actually Works | TEAMS Training Thailand',
     seoDesc: 'A practical guide to corporate team building in Bangkok — what separates effective programs from wasted afternoons, and how to choose the right format for your team.',
     content: `

@@ -16,7 +16,7 @@ export default function Corporate() {
           <Link to="/contact" className="btn-primary">Book a session</Link>
         </div>
         <div className="prog-hero-img fu" ref={r} style={{transitionDelay:'0.15s'}}>
-          <img src="https://teamstrainingthailand.com/wp-content/uploads/2025/02/Copy-of-455192972_1257494402093634_2774834864595962944_n.jpg" alt="Corporate program — TEAMS Training Thailand" />
+          <img src="https://wp.teamstrainingthailand.com/wp-content/uploads/2025/02/Copy-of-455192972_1257494402093634_2774834864595962944_n.jpg" alt="Corporate program — TEAMS Training Thailand" />
         </div>
       </section>
 

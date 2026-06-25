@@ -16,7 +16,7 @@ export default function Educators() {
           <Link to="/contact" className="btn-primary">Book a session</Link>
         </div>
         <div className="prog-hero-img fu" ref={r} style={{transitionDelay:'0.15s'}}>
-          <img src="https://teamstrainingthailand.com/wp-content/uploads/2025/08/IMG_5159-scaled.jpg" alt="Educators program — TEAMS Training Thailand" />
+          <img src="https://wp.teamstrainingthailand.com/wp-content/uploads/2025/08/IMG_5159-scaled.jpg" alt="Educators program — TEAMS Training Thailand" />
         </div>
       </section>
 

@@ -3,7 +3,7 @@ import { useFadeIn } from '../components/useFadeIn'
 import './Home.css'
 
 const FRAMEWORK = [
-  { l:'T', w:'Trust',        d:'The foundation of every real team. Nothing works without it.' },
+  { l:'T', w:'Teamwork',     d:'Showing up for the group\'s goals, not just your own.' },
   { l:'E', w:'Empathy',      d:'Understanding others before demanding to be understood.' },
   { l:'A', w:'Adaptability', d:'Thriving when the plan changes — because it always does.' },
   { l:'M', w:'Mindset',      d:'Growth-oriented, curious, and resilient under pressure.' },
@@ -13,9 +13,9 @@ const FRAMEWORK = [
 const SKILLS = ['Empathy','Communication','Emotional intelligence','Collaboration','Creative thinking','Leadership','Resilience','Self-awareness']
 
 const EVENTS = [
-  { tag:'Upcoming',   title:'Discover Strength & Build Confidence',                   meta:'26 April 2026 · Sanctuary Studio, Sukhumvit 103', img:'https://teamstrainingthailand.com/wp-content/uploads/2026/04/TEAMS-Posts-Square-6-1024x1024.png' },
-  { tag:'Youth Camp', title:'TEAMS Discovery Camp (Ages 8–12)',                       meta:'March 28–29 · C2 Community, Phayathai',           img:'https://teamstrainingthailand.com/wp-content/uploads/2026/02/WhatsApp-Image-2569-02-16-at-17.06.08-1-e1771246947605-1024x607.jpeg' },
-  { tag:'Past Event', title:'Bridging Borders: Thai & Korean Students in Ayutthaya', meta:'January 2026 · Ayutthaya',                        img:'https://teamstrainingthailand.com/wp-content/uploads/2026/01/WhatsApp-Image-2569-01-11-at-16.19.41-1024x768.jpeg' },
+  { tag:'Upcoming',   title:'Discover Strength & Build Confidence',                   meta:'26 April 2026 · Sanctuary Studio, Sukhumvit 103', img:'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/04/TEAMS-Posts-Square-6-1024x1024.png' },
+  { tag:'Youth Camp', title:'TEAMS Discovery Camp (Ages 8–12)',                       meta:'March 28–29 · C2 Community, Phayathai',           img:'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/02/WhatsApp-Image-2569-02-16-at-17.06.08-1-e1771246947605-1024x607.jpeg' },
+  { tag:'Past Event', title:'Bridging Borders: Thai & Korean Students in Ayutthaya', meta:'January 2026 · Ayutthaya',                        img:'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/01/WhatsApp-Image-2569-01-11-at-16.19.41-1024x768.jpeg' },
 ]
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         <div className="hero-right">
           <div className="hero-img-wrap">
-            <img src="https://teamstrainingthailand.com/wp-content/uploads/2026/01/WhatsApp-Image-2569-01-11-at-16.19.41-1024x768.jpeg" alt="TEAMS cross-cultural team building in Ayutthaya" />
+            <img src="https://wp.teamstrainingthailand.com/wp-content/uploads/2026/01/WhatsApp-Image-2569-01-11-at-16.19.41-1024x768.jpeg" alt="TEAMS cross-cultural team building in Ayutthaya" />
           </div>
           <div className="hero-badge">
             <div className="badge-num">3</div>
