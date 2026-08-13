@@ -55,6 +55,7 @@ export default function Nav() {
         </div>
 
         <Link to="/about" className="nav-link">About</Link>
+        <Link to="/gallery" className="nav-link">Gallery</Link>
 
         {/* Updates dropdown */}
         <div

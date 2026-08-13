@@ -11,6 +11,7 @@ import Educators from './pages/programs/Educators'
 import Youth from './pages/programs/Youth'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
+import Gallery from './pages/Gallery'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/programs/corporate" element={<Corporate />} />
         <Route path="/programs/educators" element={<Educators />} />
         <Route path="/programs/youth" element={<Youth />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>

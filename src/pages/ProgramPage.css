@@ -13,3 +13,11 @@
 @media (max-width: 540px) {
   .items-grid { grid-template-columns: 1fr; }
 }
+
+/* Workshop-type cards */
+.workshops-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+.workshop-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.workshop-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--gold-lt); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 0.35rem; flex-shrink: 0; }
+.workshop-title { font-family: var(--font-d); font-size: 1rem; font-weight: 700; color: var(--navy); }
+.workshop-desc { font-size: 0.875rem; color: var(--grey); line-height: 1.65; margin: 0; }
+@media (max-width: 640px) { .workshops-grid { grid-template-columns: 1fr; } }

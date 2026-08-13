@@ -4,6 +4,13 @@ import '../ProgramPage.css'
 
 const ITEMS = ["Self-awareness and emotional intelligence","Communication and active listening","Collaboration and team roles","Leadership and supporting others","Resilience and adaptability","Confidence under pressure"]
 
+const WORKSHOPS = [
+  { icon:'💬', title:'Communication Workshops', desc:'Kids learn to express themselves clearly, listen without interrupting, and speak up in a group setting that actually feels safe. We practise the habits that make real conversation possible.' },
+  { icon:'🤝', title:'Teamwork Workshops', desc:'Activities that reveal how kids naturally lead, follow, and collaborate — then give them better tools to do it intentionally. They leave knowing what kind of teammate they want to be.' },
+  { icon:'❤️', title:'Empathy-Centred Workshops', desc:'Understanding others starts with understanding yourself. These sessions help young people name emotions, read a room, and build kinder relationships — skills no textbook teaches directly.' },
+  { icon:'🤖', title:'AI Workshops', desc:'Age-appropriate explorations of how AI tools work, what they can and can\'t do, and how to stay curious and critical. For the generation that will grow up alongside these technologies.' },
+]
+
 export default function Youth() {
   const r = useFadeIn()
   return (
@@ -36,6 +43,23 @@ export default function Youth() {
       </section>
 
       <section className="section" style={{background:'var(--white)'}}>
+        <div className="fu" ref={r}>
+          <div className="section-label">Workshop formats</div>
+          <h2 className="section-title">Four ways we <em>work with kids.</em></h2>
+          <p className="section-sub">Each workshop type addresses a different dimension of growth — and every session is tailored to the age group, school culture, or camp context.</p>
+        </div>
+        <div className="workshops-grid fu" ref={r} style={{transitionDelay:'0.1s'}}>
+          {WORKSHOPS.map((w, i) => (
+            <div className="workshop-card" key={i}>
+              <div className="workshop-icon">{w.icon}</div>
+              <div className="workshop-title">{w.title}</div>
+              <p className="workshop-desc">{w.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section" style={{background:'var(--off)'}}>
         <div className="fu" ref={r}>
           <div className="section-label">Format</div>
           <h2 className="section-title">How it <em>works.</em></h2>

@@ -4,6 +4,13 @@ import '../ProgramPage.css'
 
 const ITEMS = ["Facilitation skills and techniques","Emotional regulation in the classroom","Building psychological safety","Designing purposeful activities","Understanding group dynamics","Self-awareness as a practitioner"]
 
+const WORKSHOPS = [
+  { icon:'💬', title:'Communication Workshops', desc:'Refine how you communicate with students, colleagues, and parents — tone, clarity, feedback, and the skill of being genuinely heard. The tools for difficult conversations that don\'t go sideways.' },
+  { icon:'🤝', title:'Teamwork Workshops', desc:'Understand the team dynamics in your own staff room, and learn to design collaborative learning environments that actually work — for the students you have, not an idealised classroom.' },
+  { icon:'❤️', title:'Empathy-Centred Workshops', desc:'Build the emotional capacity to teach through your students\' experience, not just your own. Practise the kind of presence that changes how a room feels — and how students engage with it.' },
+  { icon:'🤖', title:'AI Workshops', desc:'Understand what AI can and can\'t do in an educational context, how to integrate it thoughtfully into your classroom, and how to teach your students to engage with it critically and ethically.' },
+]
+
 export default function Educators() {
   const r = useFadeIn()
   return (
@@ -36,6 +43,23 @@ export default function Educators() {
       </section>
 
       <section className="section" style={{background:'var(--white)'}}>
+        <div className="fu" ref={r}>
+          <div className="section-label">Workshop formats</div>
+          <h2 className="section-title">Four ways we <em>work with educators.</em></h2>
+          <p className="section-sub">Each format is built around a specific dimension of professional growth — and always designed to be directly applicable back in the classroom.</p>
+        </div>
+        <div className="workshops-grid fu" ref={r} style={{transitionDelay:'0.1s'}}>
+          {WORKSHOPS.map((w, i) => (
+            <div className="workshop-card" key={i}>
+              <div className="workshop-icon">{w.icon}</div>
+              <div className="workshop-title">{w.title}</div>
+              <p className="workshop-desc">{w.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section" style={{background:'var(--off)'}}>
         <div className="fu" ref={r}>
           <div className="section-label">Format</div>
           <h2 className="section-title">How it <em>works.</em></h2>
