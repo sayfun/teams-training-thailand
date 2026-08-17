@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useFadeIn } from '../components/useFadeIn'
 import './Gallery.css'
 
-const WP_API = 'https://wp.teamstrainingthailand.com/wp-json/wp/v2/media?media_type=image&per_page=100&orderby=date&order=desc&_fields=id,source_url,alt_text,caption,title'
+const WP_API = 'https://wp.teamstrainingthailand.com/wp-json/wp/v2/media?media_type=image&per_page=100&orderby=date&order=desc&_fields=id,source_url,alt_text,caption,title,description'
 
 export default function Gallery() {
   const r = useFadeIn()
@@ -14,7 +14,8 @@ export default function Gallery() {
     fetch(WP_API)
       .then(res => res.json())
       .then(data => {
-        setImages(Array.isArray(data) ? data.filter(img => img.source_url) : [])
+        const all = Array.isArray(data) ? data.filter(img => img.source_url) : []
+        setImages(all.filter(img => img.description?.rendered?.toLowerCase().includes('gallery')))
         setLoading(false)
       })
       .catch(() => setLoading(false))
