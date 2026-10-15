@@ -13,6 +13,8 @@
 .footer-line { color: rgba(255,255,255,0.3); }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 1.5rem clamp(1.5rem,5vw,4rem); flex-wrap: wrap; gap: 0.5rem; }
 .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.22); }
+.footer-privacy { color: rgba(255,255,255,0.35); text-decoration: underline; text-underline-offset: 2px; transition: color 0.2s; }
+.footer-privacy:hover { color: var(--gold); }
 
 @media (max-width: 860px) {
   .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }

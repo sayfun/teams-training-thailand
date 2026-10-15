@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2026 TEAMS Training Thailand · Bangkok, Thailand</p>
+        <p>© 2026 TEAMS Training Thailand · Bangkok, Thailand · <Link to="/privacy" className="footer-privacy">Privacy Policy</Link></p>
         <p>Where teams learn to be human.</p>
       </div>
     </footer>

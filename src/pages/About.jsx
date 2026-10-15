@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useFadeIn } from '../components/useFadeIn'
 import './About.css'
 
@@ -48,6 +49,13 @@ export default function About() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="section" style={{background:'var(--white)', paddingTop:'2rem', paddingBottom:'2rem'}}>
+        <p style={{fontSize:'0.8rem', color:'var(--grey)'}}>
+          TEAMS Training Thailand · Bangkok, Thailand ·{' '}
+          <Link to="/privacy" style={{color:'var(--grey)', textDecoration:'underline', textUnderlineOffset:'2px'}}>Privacy Policy</Link>
+        </p>
       </section>
     </main>
   )
