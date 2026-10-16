@@ -1,5 +1,7 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useFadeIn } from '../components/useFadeIn'
+import { getPostsByCategory } from '../utils/wpApi'
 import './Home.css'
 
 const FRAMEWORK = [
@@ -12,14 +14,15 @@ const FRAMEWORK = [
 
 const SKILLS = ['Empathy','Communication','Emotional intelligence','Collaboration','Creative thinking','Leadership','Resilience','Self-awareness']
 
-const EVENTS = [
-  { tag:'Upcoming',   title:'Discover Strength & Build Confidence',                   meta:'26 April 2026 · Sanctuary Studio, Sukhumvit 103', img:'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/04/TEAMS-Posts-Square-6-1024x1024.png' },
-  { tag:'Youth Camp', title:'TEAMS Discovery Camp (Ages 8–12)',                       meta:'March 28–29 · C2 Community, Phayathai',           img:'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/02/WhatsApp-Image-2569-02-16-at-17.06.08-1-e1771246947605-1024x607.jpeg' },
-  { tag:'Past Event', title:'Bridging Borders: Thai & Korean Students in Ayutthaya', meta:'January 2026 · Ayutthaya',                        img:'https://wp.teamstrainingthailand.com/wp-content/uploads/2026/01/WhatsApp-Image-2569-01-11-at-16.19.41-1024x768.jpeg' },
-]
-
 export default function Home() {
   const r = useFadeIn()
+  const [events, setEvents] = useState([])
+
+  useEffect(() => {
+    getPostsByCategory('team-building')
+      .then(posts => setEvents(posts.slice(0, 3)))
+      .catch(() => {})
+  }, [])
 
   return (
     <main>
@@ -108,13 +111,15 @@ export default function Home() {
           <Link to="/updates" className="link-pill">View all →</Link>
         </div>
         <div className="events-grid">
-          {EVENTS.map((e,i) => (
-            <Link to="/updates" className="ev-card fu" key={i} ref={r} style={{transitionDelay:`${i*0.09}s`}}>
-              <img className="ev-img" src={e.img} alt={e.title} />
+          {events.map((e,i) => (
+            <Link to={`/blog/${e.slug}`} className="ev-card fu" key={e.slug} ref={r} style={{transitionDelay:`${i*0.09}s`}}>
+              {e.img
+                ? <img className="ev-img" src={e.img} alt={e.title} />
+                : <div className="ev-img" style={{background:'var(--off)'}} />}
               <div className="ev-body">
-                <span className="ev-tag">{e.tag}</span>
+                <span className="ev-tag">{e.category}</span>
                 <div className="ev-title">{e.title}</div>
-                <div className="ev-meta">{e.meta}</div>
+                <div className="ev-meta">{e.dateLabel}</div>
               </div>
             </Link>
           ))}

@@ -170,6 +170,33 @@
 .post-form-cta-desc { font-size: 0.85rem; color: var(--grey); margin: 0; }
 .post-form-cta-btn { white-space: nowrap; flex-shrink: 0; }
 
+/* WordPress Gutenberg block layout */
+.post-content .wp-block-columns {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.post-content .wp-block-column {
+  flex: 1;
+  min-width: 160px;
+}
+.post-content .wp-block-image {
+  margin: 0 0 1rem;
+}
+.post-content .wp-block-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+.post-content figure { margin: 0 0 1.25rem; }
+.post-content figcaption { font-size: 0.78rem; color: var(--grey); text-align: center; margin-top: 0.35rem; }
+.post-content .wp-block-separator { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+.post-content .wp-block-quote { border-left: 3px solid var(--gold); padding: 0.5rem 0 0.5rem 1.25rem; margin: 1.5rem 0; }
+.post-content .wp-block-quote p { color: var(--navy); font-style: italic; margin: 0; }
+
 /* Back button */
 .post-back {
   margin-top: 3rem;
