@@ -70,6 +70,17 @@ export async function getPost(slug) {
   return posts[0] ? normalizePost(posts[0]) : null
 }
 
+export async function getPostsByCategory(categorySlug) {
+  const catRes = await fetch(`${WP_API}/categories?slug=${encodeURIComponent(categorySlug)}`)
+  if (!catRes.ok) throw new Error('Failed to fetch category')
+  const cats = await catRes.json()
+  if (!cats.length) return []
+  const catId = cats[0].id
+  const res = await fetch(`${WP_API}/posts?_embed&per_page=50&orderby=date&order=desc&categories=${catId}`)
+  if (!res.ok) throw new Error('Failed to fetch posts')
+  return (await res.json()).map(normalizePost)
+}
+
 export async function getRelated(slug, category, n = 2) {
   const res = await fetch(`${WP_API}/posts?_embed&per_page=20&orderby=date&order=desc`)
   if (!res.ok) return []

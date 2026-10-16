@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { getPosts } from '../utils/wpApi'
+import { getPostsByCategory } from '../utils/wpApi'
 import { useFadeIn } from '../components/useFadeIn'
 
 export default function Updates() {
@@ -10,7 +10,7 @@ export default function Updates() {
   const [error, setError]     = useState(null)
 
   useEffect(() => {
-    getPosts()
+    getPostsByCategory('team-building')
       .then(setPosts)
       .catch(() => setError('Could not load updates. Please try again later.'))
       .finally(() => setLoading(false))
