@@ -152,6 +152,24 @@
   color: var(--gold);
 }
 
+/* WP Forms replacement CTA */
+.post-form-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--gold-lt);
+  border: 1.5px solid rgba(240,165,0,0.3);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.post-form-cta-icon { font-size: 1.8rem; flex-shrink: 0; }
+.post-form-cta > div:nth-child(2) { flex: 1; min-width: 180px; }
+.post-form-cta-title { font-family: var(--font-d); font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.2rem; }
+.post-form-cta-desc { font-size: 0.85rem; color: var(--grey); margin: 0; }
+.post-form-cta-btn { white-space: nowrap; flex-shrink: 0; }
+
 /* Back button */
 .post-back {
   margin-top: 3rem;

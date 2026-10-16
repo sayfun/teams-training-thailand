@@ -64,6 +64,20 @@ export default function BlogPost() {
       <div className="post-layout">
         <article className="post-body">
           <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
+
+          {post.hasForm && (
+            <div className="post-form-cta">
+              <div className="post-form-cta-icon">📋</div>
+              <div>
+                <div className="post-form-cta-title">Ready to register?</div>
+                <p className="post-form-cta-desc">Fill out the registration form to secure your spot.</p>
+              </div>
+              <a href={post.wpPostUrl} target="_blank" rel="noreferrer" className="btn-primary post-form-cta-btn">
+                Open registration form →
+              </a>
+            </div>
+          )}
+
           <div className="post-back">
             <Link to="/blog" className="btn-secondary">← Back to Blog</Link>
           </div>

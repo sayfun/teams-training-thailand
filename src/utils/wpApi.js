@@ -34,19 +34,33 @@ function fixImgUrl(url) {
             .replace('http://teamstrainingthailand.com/wp-content',  'https://wp.teamstrainingthailand.com/wp-content')
 }
 
+function stripWpForms(html) {
+  const doc = new DOMParser().parseFromString(html, 'text/html')
+  const forms = doc.querySelectorAll('.wpforms-container')
+  const hasForm = forms.length > 0
+  forms.forEach(f => f.remove())
+  return { content: doc.body.innerHTML, hasForm }
+}
+
 function normalizePost(p) {
   const cats      = p._embedded?.['wp:term']?.[0] || []
   const primaryCat = cats[0]?.name || 'Article'
   const img       = fixImgUrl(p._embedded?.['wp:featuredmedia']?.[0]?.source_url || null)
   const excerpt   = stripTags(p.excerpt.rendered).slice(0, 160)
 
+  const rawContent = p.content.rendered
+    .replace(/https:\/\/teamstrainingthailand\.com\/wp-content/g, 'https://wp.teamstrainingthailand.com/wp-content')
+    .replace(/http:\/\/teamstrainingthailand\.com\/wp-content/g,  'https://wp.teamstrainingthailand.com/wp-content')
+
+  const { content, hasForm } = stripWpForms(rawContent)
+
   return {
     slug:          p.slug,
     title:         decodeHtml(p.title.rendered),
     excerpt,
-    content:       p.content.rendered
-                    .replace(/https:\/\/teamstrainingthailand\.com\/wp-content/g, 'https://wp.teamstrainingthailand.com/wp-content')
-                    .replace(/http:\/\/teamstrainingthailand\.com\/wp-content/g,  'https://wp.teamstrainingthailand.com/wp-content'),
+    content,
+    hasForm,
+    wpPostUrl:     `https://wp.teamstrainingthailand.com/${p.slug}/`,
     dateLabel:     formatDate(p.date),
     img,
     category:      primaryCat,
